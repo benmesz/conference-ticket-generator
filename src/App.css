@@ -1,0 +1,95 @@
+:root {
+  /* Colors */
+  --neutral-0: hsl(0, 0%, 100%);
+  --neutral-300: hsl(252, 6%, 83%);
+  --neutral-500: hsl(245, 15%, 58%);
+  --neutral-700: hsl(245, 19%, 35%);
+  --neutral-900: hsl(248, 70%, 10%);
+  --orange-500: hsl(7, 88%, 67%);
+  --orange-700: hsl(7, 71%, 60%);
+  --gradient: linear-gradient(
+    90deg,
+    rgba(243, 115, 98, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* Font family */
+  --inconsolate: "Inconsolata", monospace;
+
+  /* Font weights */
+  --regulat: 400;
+  --medium: 500;
+  --bold: 700;
+  --extra-bold: 800;
+
+  /* Font sizes */
+  --body: 1rem;
+  --subtitle: 1.5rem;
+}
+
+html {
+  background-color: var(--neutral-900);
+  background-image: url(/pattern-squiggly-line-top.svg),
+    url(/pattern-squiggly-line-bottom-desktop.svg), url(/pattern-circle.svg),
+    url(/pattern-lines.svg), url(/background-desktop.png);
+  background-size: auto, auto, auto, cover, cover;
+  background-repeat: no-repeat;
+  background-position: top 10% right, bottom left, top left 10%, top, center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--inconsolate);
+  color: var(--neutral-0);
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 135%;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 1rem;
+  text-align: left;
+  font-weight: var(--regular);
+  color: var(--neutral-300);
+}
+
+p {
+  color: var(--neutral-300);
+  border: 1px solid green;
+}
+
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1.5rem;
+  border: 1px solid yellow;
+}
+
+button {
+  font-family: var(--inconsolate);
+  font-weight: var(--bold);
+  color: var(--neutral-900);
+  font-size: 1.125rem;
+  background-color: var(--orange-500);
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+}
