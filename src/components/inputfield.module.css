@@ -9,7 +9,7 @@
   backdrop-filter: blur(3px);
 }
 
-#imgView {
+#placeholderImg {
   background-color: rgba(255, 255, 255, 0.1);
   height: 48px;
   width: 48px;
@@ -22,17 +22,49 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+#imgView {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 48px;
+  width: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
 #imgView > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 10px;
   border: 1px solid var(--neutral-500);
-  display: block;
 }
 
 .subtitle {
   color: var(--neutral-500);
   font-size: 0.75rem;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.infoIcon {
+  opacity: 80%;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.secondaryButton {
+  margin-top: 1rem;
+  height: fit-content;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: var(--regular);
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--neutral-300);
+  border-radius: 0.25rem;
 }
